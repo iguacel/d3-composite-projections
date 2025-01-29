@@ -154,10 +154,10 @@ export default function () {
       .stream(pointStream);
 
     canaryIslandsPoint = canaryIslands
-      .translate([x + 0.1 * k, y - 0.094 * k])
+      .translate([x + 0.15 * k, y - 0.084 * k])
       .clipExtent([
-        [x - 0.1331 * k + epsilon, y + 0.053457 * k + epsilon],
-        [x - 0.0354 * k - epsilon, y + 0.08969 * k - epsilon],
+        [x - 0.0831 * k + epsilon, y + 0.053457 * k + epsilon],  // Shift right
+        [x + 0.0146 * k - epsilon, y + 0.7 * k - epsilon]    // Shift right
       ])
       .stream(pointStream);
 
@@ -185,9 +185,9 @@ export default function () {
     console.info("LD BBOX:", iberianPeninsule.invert([canaryIslands.clipExtent()[1][0], canaryIslands.clipExtent()[1][1]]));
     */
 
-    var ulCanaryIslands = iberianPeninsule([-14.034675, 34.965007]);
-    var urCanaryIslands = iberianPeninsule([-7.4208899, 35.536988]);
-    var ldCanaryIslands = iberianPeninsule([-7.3148275, 33.54359]);
+    var ulCanaryIslands = iberianPeninsule([-10.244675, 34.92]);
+    var urCanaryIslands = iberianPeninsule([-4.04, 35.13]);
+    var ldCanaryIslands = iberianPeninsule([-4.045, 33.12]);
 
     context.moveTo(ulCanaryIslands[0], ulCanaryIslands[1]);
     context.lineTo(urCanaryIslands[0], urCanaryIslands[1]);
