@@ -13,6 +13,13 @@
   
 ---
 
+## Install
+
+```
+npm install https://github.com/iguacel/d3-composite-projections.git
+
+```
+
 [![Build Status](https://travis-ci.org/rveciana/d3-composite-projections.svg?branch=master)](https://travis-ci.org/rveciana/d3-composite-projections)
 
 Set of d3 projections for showing countries' distant lands together

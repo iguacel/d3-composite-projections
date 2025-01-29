@@ -6,98 +6,15 @@ import { createCanvas } from "canvas";
 import { PNG } from "pngjs";
 import topojson from "topojson-client";
 
-import geoAlbersUsa from "../src/albersUsa.js";
-import geoAlbersUsaTerritoires from "../src/albersUsaTerritories.js";
+
 import geoConicConformalSpain from "../src/conicConformalSpain.js";
-import geoConicConformalPortugal from "../src/conicConformalPortugal.js";
-import geoConicConformalNetherlands from "../src/conicConformalNetherlands.js";
-import geoMercatorEcuador from "../src/mercatorEcuador.js";
-import geoTransverseMercatorChile from "../src/transverseMercatorChile.js";
-import geoConicEquidistantJapan from "../src/conicEquidistantJapan.js";
-import geoConicConformalFrance from "../src/conicConformalFrance.js";
-import geoConicConformalEurope from "../src/conicConformalEurope.js";
-import geoMercatorMalaysia from "../src/mercatorMalaysia.js";
-import geoMercatorEquatorialGuinea from "../src/mercatorEquatorialGuinea.js";
-import geoAlbersUk from "../src/albersUk.js";
 
 const projections = [
-  {
-    name: "albersUsa",
-    projection: geoAlbersUsa,
-    topojson: "./data/us.json",
-    field: "states",
-  },
-  {
-    name: "albersUsaTerritories",
-    projection: geoAlbersUsaTerritoires,
-    topojson: "./data/us_territories.json",
-    field: "us",
-  },
   {
     name: "conicConformalSpain",
     projection: geoConicConformalSpain,
     topojson: "./data/provincias.json",
     field: "provincias",
-  },
-  {
-    name: "conicConformalPortugal",
-    projection: geoConicConformalPortugal,
-    topojson: "./data/world-50m.json",
-    field: "countries",
-  },
-  {
-    name: "conicConformalNetherlands",
-    projection: geoConicConformalNetherlands,
-    topojson: "./data/netherlands.json",
-    field: "nederland",
-  },
-  {
-    name: "mercatorEcuador",
-    projection: geoMercatorEcuador,
-    topojson: "./data/world-50m.json",
-    field: "countries",
-  },
-  {
-    name: "transverseMercatorChile",
-    projection: geoTransverseMercatorChile,
-    topojson: "./data/chile.json",
-    field: "chile",
-  },
-  {
-    name: "conicEquidistantJapan",
-    projection: geoConicEquidistantJapan,
-    topojson: "./data/japan.json",
-    field: "japan",
-  },
-  {
-    name: "conicConformalFrance",
-    projection: geoConicConformalFrance,
-    topojson: "./data/france.json",
-    field: "regions",
-  },
-  {
-    name: "conicConformalEurope",
-    projection: geoConicConformalEurope,
-    topojson: "./data/nuts0.json",
-    field: "nuts0",
-  },
-  {
-    name: "mercatorMalaysia",
-    projection: geoMercatorMalaysia,
-    topojson: "./data/malaysia.json",
-    field: "land",
-  },
-  {
-    name: "mercatorEquatorialGuinea",
-    projection: geoMercatorEquatorialGuinea,
-    topojson: "./data/ge.json",
-    field: "ge",
-  },
-  {
-    name: "albersUk",
-    projection: geoAlbersUk,
-    topojson: "./data/uk-counties.json",
-    field: "UK",
   },
 ];
 
