@@ -1,12 +1,25 @@
 # d3-composite-projections
 
+## Fork: conicConformalSpain
+
+---
+✔ Canary Islands moved right
+✔ Clipping extent properly follows
+✔ Borders moved right
+
+- conicConformalSpain
+- conicConformalSpainModerate
+- conicConformalSpainOriginal
+  
+---
+
 [![Build Status](https://travis-ci.org/rveciana/d3-composite-projections.svg?branch=master)](https://travis-ci.org/rveciana/d3-composite-projections)
 
 Set of d3 projections for showing countries' distant lands together
 
 ![conicConformalFrance](thumbnail.png "Conic Conformal France example")
 
-# USAGE
+## USAGE
 
 This is the version compatible with d3v6, please [go here for the version compatible with d3v3](https://github.com/rveciana/d3-composite-projections/tree/v0.4.0).
 
@@ -16,7 +29,7 @@ The projection itself works the same way as the other d3 projections. To be more
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="d3-composite-projections.js"></script>
 <script>
-	var projection = d3.geoConicConformalPortugal();
+ var projection = d3.geoConicConformalPortugal();
 </script>
 ```
 
@@ -86,7 +99,7 @@ or
 <script src="https://unpkg.com/d3-composite-projections@1.2.0"></script>
 ```
 
-## As a module:
+## As a module
 
 Install the library:
 
@@ -100,7 +113,7 @@ Import it:
 import { geoAlbersUk } from "d3-composite-projections";
 ```
 
-## In node:
+## In node
 
 Install the library:
 
